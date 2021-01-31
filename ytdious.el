@@ -23,7 +23,7 @@
 ;; Keywords: youtube matching multimedia
 ;; URL: https://github.com/spiderbit/ytdious
 ;; License: GNU General Public License >= 3
-;; Package-Requires: ((emacs "25.3"))
+;; Package-Requires: ((emacs "25.3") (s "1.12.0"))
 
 ;;; Commentary:
 
@@ -42,6 +42,7 @@
 (require 'json)
 (require 'seq)
 (require 'ring)
+(require 's)
 
 (defgroup ytdious ()
   "An Emacs Youtube \"front-end\"."
